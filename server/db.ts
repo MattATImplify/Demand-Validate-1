@@ -14,5 +14,8 @@ if (!dbUrl) {
 // Enable connection caching in serverless environments
 neonConfig.fetchConnectionCache = true;
 
-const sql = neon(dbUrl);
+// Handle edge case where dbUrl might be an object in some environments
+const finalUrl = typeof dbUrl === 'string' ? dbUrl : (dbUrl as any).toString();
+
+const sql = neon(finalUrl);
 export const db = drizzle(sql, { schema });

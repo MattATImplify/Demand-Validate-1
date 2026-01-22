@@ -47,7 +47,11 @@ export async function registerRoutes(
           field: err.errors[0].path.join('.'),
         });
       }
-      res.status(500).json({ message: "Internal Server Error" });
+      // Return the actual error message to help debug
+      res.status(500).json({ 
+        message: "Internal Server Error", 
+        error: err instanceof Error ? err.message : String(err) 
+      });
     }
   });
 
