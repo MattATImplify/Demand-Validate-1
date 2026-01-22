@@ -29,17 +29,20 @@ export async function registerRoutes(
   // Create a lead
   app.post(api.leads.create.path, async (req, res) => {
     try {
+      console.log("Received lead submission:", req.body);
       const input = api.leads.create.input.parse(req.body);
       const lead = await storage.createLead(input);
+      console.log("Lead created successfully:", lead.id);
       res.status(201).json(lead);
     } catch (err) {
+      console.error("Error creating lead:", err);
       if (err instanceof z.ZodError) {
         return res.status(400).json({
           message: err.errors[0].message,
           field: err.errors[0].path.join('.'),
         });
       }
-      throw err;
+      res.status(500).json({ message: "Internal Server Error" });
     }
   });
 
@@ -62,28 +65,32 @@ export async function registerRoutes(
     res.json(stats);
   });
 
-  // Seed data if empty
-  const leads = await storage.getLeads();
-  if (leads.length === 0) {
-    console.log("Seeding database with initial leads...");
-    await storage.createLead({
-      name: "Sarah Jenkins",
-      email: "sarah.j@example.com",
-      interestLevel: "full_time",
-      comments: "Looking for a quiet place away from the kids!"
-    });
-    await storage.createLead({
-      name: "Mike Stevens",
-      email: "mike.dev@example.com",
-      interestLevel: "part_time",
-      comments: "Need good wifi for zoom calls."
-    });
-    await storage.createLead({
-      name: "Emma Wood",
-      email: "emma.w@example.com",
-      interestLevel: "day_pass",
-      comments: "Just testing the waters."
-    });
+  // Seed data if empty (Slightly safer for serverless)
+  try {
+    const leads = await storage.getLeads();
+    if (leads.length === 0) {
+      console.log("Seeding database with initial leads...");
+      await storage.createLead({
+        name: "Sarah Jenkins",
+        email: "sarah.j@example.com",
+        interestLevel: "full_time",
+        comments: "Looking for a quiet place away from the kids!"
+      });
+      await storage.createLead({
+        name: "Mike Stevens",
+        email: "mike.dev@example.com",
+        interestLevel: "part_time",
+        comments: "Need good wifi for zoom calls."
+      });
+      await storage.createLead({
+        name: "Emma Wood",
+        email: "emma.w@example.com",
+        interestLevel: "day_pass",
+        comments: "Just testing the waters."
+      });
+    }
+  } catch (err) {
+    console.error("Failed to seed database:", err);
   }
 
   return httpServer;
