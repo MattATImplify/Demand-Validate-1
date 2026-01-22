@@ -1,12 +1,3 @@
-[build]
-  command = "npm run build"
-  publish = "dist/public"
-  functions = "dist/functions"
-
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["pg-native", "canvas"]
-
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/api/:splat"
@@ -17,4 +8,12 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
+
+[build]
+  command = "npm run build"
+  publish = "dist/public"
+  functions = "dist/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["pg-native", "canvas"]
