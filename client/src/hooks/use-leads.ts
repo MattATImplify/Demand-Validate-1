@@ -5,10 +5,18 @@ export function useLeads() {
   return useQuery({
     queryKey: [api.leads.list.path],
     queryFn: async () => {
-      const res = await fetch(api.leads.list.path);
+      const password = sessionStorage.getItem("admin_password");
+      const res = await fetch(api.leads.list.path, {
+        headers: password ? { "x-admin-password": password } : {}
+      });
+      if (res.status === 401) throw new Error("Unauthorized");
       if (!res.ok) throw new Error("Failed to fetch leads");
       return api.leads.list.responses[200].parse(await res.json());
     },
+    retry: (failureCount, error) => {
+      if (error.message === "Unauthorized") return false;
+      return failureCount < 3;
+    }
   });
 }
 
@@ -16,10 +24,18 @@ export function useLeadStats() {
   return useQuery({
     queryKey: [api.leads.getStats.path],
     queryFn: async () => {
-      const res = await fetch(api.leads.getStats.path);
+      const password = sessionStorage.getItem("admin_password");
+      const res = await fetch(api.leads.getStats.path, {
+        headers: password ? { "x-admin-password": password } : {}
+      });
+      if (res.status === 401) throw new Error("Unauthorized");
       if (!res.ok) throw new Error("Failed to fetch stats");
       return api.leads.getStats.responses[200].parse(await res.json());
     },
+    retry: (failureCount, error) => {
+      if (error.message === "Unauthorized") return false;
+      return failureCount < 3;
+    }
   });
 }
 

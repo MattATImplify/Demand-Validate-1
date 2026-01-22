@@ -9,6 +9,23 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
   
+  // Basic Auth Middleware for Admin
+  const adminAuth = (req: any, res: any, next: any) => {
+    const adminPassword = process.env.ADMIN_PASSWORD;
+    if (!adminPassword) {
+      // If no password set in env, allow access but log warning
+      console.warn("ADMIN_PASSWORD not set, admin routes are public");
+      return next();
+    }
+
+    const providedPassword = req.headers['x-admin-password'];
+    if (providedPassword === adminPassword) {
+      return next();
+    }
+
+    res.status(401).json({ message: "Unauthorized" });
+  };
+
   // Create a lead
   app.post(api.leads.create.path, async (req, res) => {
     try {
@@ -26,14 +43,14 @@ export async function registerRoutes(
     }
   });
 
-  // List leads
-  app.get(api.leads.list.path, async (req, res) => {
+  // List leads (Protected)
+  app.get(api.leads.list.path, adminAuth, async (req, res) => {
     const leads = await storage.getLeads();
     res.json(leads);
   });
 
-  // Get stats (simple aggregation for dashboard)
-  app.get(api.leads.getStats.path, async (req, res) => {
+  // Get stats (Protected)
+  app.get(api.leads.getStats.path, adminAuth, async (req, res) => {
     const leads = await storage.getLeads();
     const stats = {
       total: leads.length,

@@ -6,8 +6,33 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { format } from "date-fns";
 
 export default function Admin() {
-  const { data: leads, isLoading: leadsLoading } = useLeads();
-  const { data: stats, isLoading: statsLoading } = useLeadStats();
+  const { data: leads, isLoading: leadsLoading, error: leadsError, refetch: refetchLeads } = useLeads();
+  const { data: stats, isLoading: statsLoading, error: statsError, refetch: refetchStats } = useLeadStats();
+
+  const handleLogin = () => {
+    const password = prompt("Enter Admin Password:");
+    if (password) {
+      sessionStorage.setItem("admin_password", password);
+      refetchLeads();
+      refetchStats();
+    }
+  };
+
+  if (leadsError?.message === "Unauthorized" || statsError?.message === "Unauthorized") {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-muted/20">
+        <Card className="w-[400px]">
+          <CardHeader>
+            <CardTitle>Admin Access Required</CardTitle>
+            <CardDescription>Please enter the administrator password to view this page.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button onClick={handleLogin} className="w-full">Login</Button>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   if (leadsLoading || statsLoading) {
     return (
