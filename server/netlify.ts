@@ -6,9 +6,14 @@ let serverlessHandler: any;
 export const handler: any = async (event: any, context: any) => {
   if (!serverlessHandler) {
     const { app } = await setupApp();
-    // serverless-http handles the /.netlify/functions/api prefix
-    // by using it as the base path for Express routing
-    serverlessHandler = serverless(app);
+    // This tells serverless-http that all our routes start with /api
+    // which matches our shared/routes.ts definitions
+    serverlessHandler = serverless(app, {
+      basePath: "/api"
+    });
   }
+  
+  // Netlify provides the path in event.path
+  // We need to make sure it matches what Express expects
   return serverlessHandler(event, context);
 };

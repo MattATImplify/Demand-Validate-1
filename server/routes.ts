@@ -9,6 +9,11 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
   
+  // Health check
+  app.get("/api/health", (_req, res) => {
+    res.json({ status: "ok", env: process.env.NODE_ENV });
+  });
+
   // Basic Auth Middleware for Admin
   const adminAuth = (req: any, res: any, next: any) => {
     const adminPassword = process.env.ADMIN_PASSWORD;
