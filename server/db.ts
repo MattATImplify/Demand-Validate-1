@@ -1,4 +1,4 @@
-import { neon, neonConfig } from '@neondatabase/serverless';
+import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
 import * as schema from "@shared/schema";
 
@@ -11,11 +11,6 @@ if (!dbUrl) {
   );
 }
 
-// Enable connection caching in serverless environments
-neonConfig.fetchConnectionCache = true;
-
-// Handle edge case where dbUrl might be an object in some environments
-const finalUrl = typeof dbUrl === 'string' ? dbUrl : (dbUrl as any).toString();
-
-const sql = neon(finalUrl);
+// We use the HTTP client for Drizzle compatibility
+const sql = neon(dbUrl);
 export const db = drizzle(sql, { schema });
