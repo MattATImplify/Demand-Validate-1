@@ -22,62 +22,6 @@ app.use(
 
 app.use(express.urlencoded({ extended: false }));
 
-// Netlify Function Path Fix
-app.use((req, res, next) => {
-  // Log the original path to debug
-  console.log(`Original Path: ${req.url}`);
-  
-  if (req.url.startsWith('/.netlify/functions/api')) {
-    req.url = req.url.replace('/.netlify/functions/api', '');
-  }
-  
-  // Ensure we don't have double slashes
-  req.url = req.url.replace(/\/+/g, '/');
-  if (!req.url.startsWith('/')) {
-    req.url = '/' + req.url;
-  }
-  
-  console.log(`Rewritten Path: ${req.url}`);
-  next();
-});
-
-export function log(message: string, source = "express") {
-  const formattedTime = new Date().toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
-  });
-
-  console.log(`${formattedTime} [${source}] ${message}`);
-}
-
-app.use((req, res, next) => {
-  const start = Date.now();
-  const path = req.path;
-  let capturedJsonResponse: Record<string, any> | undefined = undefined;
-
-  const originalResJson = res.json;
-  res.json = function (bodyJson, ...args) {
-    capturedJsonResponse = bodyJson;
-    return originalResJson.apply(res, [bodyJson, ...args]);
-  };
-
-  res.on("finish", () => {
-    const duration = Date.now() - start;
-    if (path.startsWith("/api")) {
-      let logLine = `${req.method} ${path} ${res.statusCode} in ${duration}ms`;
-      if (capturedJsonResponse) {
-        logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
-      }
-
-      log(logLine);
-    }
-  });
-
-  next();
-});
-
 export async function setupApp() {
   await registerRoutes(httpServer, app);
 
@@ -89,9 +33,8 @@ export async function setupApp() {
     throw err;
   });
 
-  if (process.env.NODE_ENV === "production") {
-    serveStatic(app);
-  } else {
+  // Netlify handles static files via the CDN, so we only need Vite/Static in dev
+  if (process.env.NODE_ENV !== "production") {
     const { setupVite } = await import("./vite");
     await setupVite(httpServer, app);
   }
