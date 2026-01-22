@@ -155,7 +155,7 @@ export default function Landing() {
         <div className="container mx-auto max-w-7xl px-4 text-center">
           <h3 className="text-2xl font-display font-bold mb-4">Staplehurst Workspace Project</h3>
           <p className="text-gray-400 mb-8 max-w-md mx-auto">
-            This is a demand validation project. If enough people sign up, we'll open a physical space in the village centre.
+            If enough people sign up, we'll open a physical space in the village centre.
           </p>
           <div className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} Staplehurst Workspace. All rights reserved.
