@@ -1,0 +1,1164 @@
+0 verbose cli /Users/matthewsmith/.nvm/versions/node/v22.21.1/bin/node /Users/matthewsmith/.nvm/versions/node/v22.21.1/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.21.1
+3 silly config load:file:/Users/matthewsmith/.nvm/versions/node/v22.21.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/matthewsmith/Downloads/Demand-Validate-1/.npmrc
+5 silly config load:file:/Users/matthewsmith/.npmrc
+6 silly config load:file:/Users/matthewsmith/.nvm/versions/node/v22.21.1/etc/npmrc
+7 verbose title npm install @neondatabase/serverless
+8 verbose argv "install" "@neondatabase/serverless" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/matthewsmith/Downloads/Demand-Validate-1/.npm-cache/_logs/2026-01-22T22_28_31_293Z-
+10 verbose logfile /Users/matthewsmith/Downloads/Demand-Validate-1/.npm-cache/_logs/2026-01-22T22_28_31_293Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @neondatabase/serverless@*
+15 silly packumentCache full:https://registry.npmjs.org/@neondatabase%2fserverless cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/@neondatabase%2fserverless 161ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@neondatabase%2fserverless set size:undefined disposed:false
+19 silly placeDep ROOT @neondatabase/serverless@1.0.2 OK for: rest-express@1.0.0 want: *
+20 silly fetch manifest @types/node@^22.15.30
+21 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 364ms (cache miss)
+23 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:undefined disposed:false
+24 silly placeDep node_modules/@neondatabase/serverless @types/node@22.19.7 OK for: @neondatabase/serverless@1.0.2 want: ^22.15.30
+25 silly reify moves {}
+26 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-wasm32-wasi
+27 silly reify mark deleted [
+27 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-wasm32-wasi'
+27 silly reify ]
+28 silly audit bulk request {
+28 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+28 silly audit   '@babel/code-frame': [ '7.27.1' ],
+28 silly audit   '@babel/compat-data': [ '7.28.4' ],
+28 silly audit   '@babel/core': [ '7.28.4' ],
+28 silly audit   '@babel/generator': [ '7.28.3' ],
+28 silly audit   '@babel/helper-compilation-targets': [ '7.27.2' ],
+28 silly audit   '@babel/helper-globals': [ '7.28.0' ],
+28 silly audit   '@babel/helper-module-imports': [ '7.27.1' ],
+28 silly audit   '@babel/helper-module-transforms': [ '7.28.3' ],
+28 silly audit   '@babel/helper-plugin-utils': [ '7.27.1' ],
+28 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+28 silly audit   '@babel/helper-validator-identifier': [ '7.27.1' ],
+28 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+28 silly audit   '@babel/helpers': [ '7.28.4' ],
+28 silly audit   '@babel/parser': [ '7.28.4' ],
+28 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.27.1' ],
+28 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.27.1' ],
+28 silly audit   '@babel/runtime': [ '7.27.0' ],
+28 silly audit   '@babel/template': [ '7.27.2' ],
+28 silly audit   '@babel/traverse': [ '7.28.4' ],
+28 silly audit   '@babel/types': [ '7.28.4' ],
+28 silly audit   '@drizzle-team/brocli': [ '0.10.2' ],
+28 silly audit   '@esbuild/aix-ppc64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/android-arm': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/android-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/android-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/darwin-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/darwin-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/freebsd-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/freebsd-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-arm': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-ia32': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-loong64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-mips64el': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-ppc64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-riscv64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-s390x': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/linux-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/netbsd-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/netbsd-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/openbsd-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/openbsd-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/openharmony-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/sunos-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/win32-arm64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/win32-ia32': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@esbuild/win32-x64': [ '0.25.12', '0.27.2' ],
+28 silly audit   '@floating-ui/core': [ '1.6.9' ],
+28 silly audit   '@floating-ui/dom': [ '1.6.13' ],
+28 silly audit   '@floating-ui/react-dom': [ '2.1.2' ],
+28 silly audit   '@floating-ui/utils': [ '0.2.9' ],
+28 silly audit   '@hookform/resolvers': [ '3.10.0' ],
+28 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+28 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+28 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+28 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+28 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+28 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+28 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+28 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+28 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+28 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+28 silly audit   '@radix-ui/number': [ '1.1.1' ],
+28 silly audit   '@radix-ui/primitive': [ '1.1.2' ],
+28 silly audit   '@radix-ui/react-accordion': [ '1.2.4' ],
+28 silly audit   '@radix-ui/react-alert-dialog': [ '1.1.7' ],
+28 silly audit   '@radix-ui/react-arrow': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-aspect-ratio': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-avatar': [ '1.1.4' ],
+28 silly audit   '@radix-ui/react-checkbox': [ '1.1.5' ],
+28 silly audit   '@radix-ui/react-collapsible': [ '1.1.4' ],
+28 silly audit   '@radix-ui/react-collection': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-compose-refs': [ '1.1.2' ],
+28 silly audit   '@radix-ui/react-context': [ '1.1.2' ],
+28 silly audit   '@radix-ui/react-context-menu': [ '2.2.7' ],
+28 silly audit   '@radix-ui/react-dialog': [ '1.1.7' ],
+28 silly audit   '@radix-ui/react-direction': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-dismissable-layer': [ '1.1.6' ],
+28 silly audit   '@radix-ui/react-dropdown-menu': [ '2.1.7' ],
+28 silly audit   '@radix-ui/react-focus-guards': [ '1.1.2' ],
+28 silly audit   '@radix-ui/react-focus-scope': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-hover-card': [ '1.1.7' ],
+28 silly audit   '@radix-ui/react-id': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-label': [ '2.1.3' ],
+28 silly audit   '@radix-ui/react-menu': [ '2.1.7' ],
+28 silly audit   '@radix-ui/react-menubar': [ '1.1.7' ],
+28 silly audit   '@radix-ui/react-navigation-menu': [ '1.2.6' ],
+28 silly audit   '@radix-ui/react-popover': [ '1.1.7' ],
+28 silly audit   '@radix-ui/react-popper': [ '1.2.3' ],
+28 silly audit   '@radix-ui/react-portal': [ '1.1.5' ],
+28 silly audit   '@radix-ui/react-presence': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-primitive': [ '2.0.3' ],
+28 silly audit   '@radix-ui/react-progress': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-radio-group': [ '1.2.4' ],
+28 silly audit   '@radix-ui/react-roving-focus': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-scroll-area': [ '1.2.4' ],
+28 silly audit   '@radix-ui/react-select': [ '2.1.7' ],
+28 silly audit   '@radix-ui/react-separator': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-slider': [ '1.2.4' ],
+28 silly audit   '@radix-ui/react-slot': [ '1.2.0' ],
+28 silly audit   '@radix-ui/react-switch': [ '1.1.4' ],
+28 silly audit   '@radix-ui/react-tabs': [ '1.1.4' ],
+28 silly audit   '@radix-ui/react-toast': [ '1.2.7' ],
+28 silly audit   '@radix-ui/react-toggle': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-toggle-group': [ '1.1.3' ],
+28 silly audit   '@radix-ui/react-tooltip': [ '1.2.0' ],
+28 silly audit   '@radix-ui/react-use-callback-ref': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-use-controllable-state': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-use-layout-effect': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-use-previous': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-use-rect': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-use-size': [ '1.1.1' ],
+28 silly audit   '@radix-ui/react-visually-hidden': [ '1.1.3' ],
+28 silly audit   '@radix-ui/rect': [ '1.1.1' ],
+28 silly audit   '@replit/vite-plugin-cartographer': [ '0.4.4' ],
+28 silly audit   '@replit/vite-plugin-dev-banner': [ '0.1.1' ],
+28 silly audit   '@replit/vite-plugin-runtime-error-modal': [ '0.0.3' ],
+28 silly audit   '@rolldown/pluginutils': [ '1.0.0-beta.27' ],
+28 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-android-arm64': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-darwin-arm64': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-darwin-x64': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-freebsd-x64': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.53.5' ],
+28 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.53.5' ],
+28 silly audit   '@tailwindcss/node': [ '4.1.18' ],
+28 silly audit   jiti: [ '2.6.1', '1.21.6' ],
+28 silly audit   tailwindcss: [ '4.1.18', '3.4.17' ],
+28 silly audit   '@tailwindcss/oxide': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.1.18' ],
+28 silly audit   '@tailwindcss/typography': [ '0.5.15' ],
+28 silly audit   'postcss-selector-parser': [ '6.0.10', '6.1.2' ],
+28 silly audit   '@tailwindcss/vite': [ '4.1.18' ],
+28 silly audit   '@tanstack/query-core': [ '5.60.5' ],
+28 silly audit   '@tanstack/react-query': [ '5.60.5' ],
+28 silly audit   '@types/babel__core': [ '7.20.5' ],
+28 silly audit   '@types/babel__generator': [ '7.6.8' ],
+28 silly audit   '@types/babel__template': [ '7.4.4' ],
+28 silly audit   '@types/babel__traverse': [ '7.20.6' ],
+28 silly audit   '@types/body-parser': [ '1.19.5' ],
+28 silly audit   '@types/connect': [ '3.4.38' ],
+28 silly audit   '@types/connect-pg-simple': [ '7.0.3' ],
+28 silly audit   '@types/d3-array': [ '3.2.1' ],
+28 silly audit   '@types/d3-color': [ '3.1.3' ],
+28 silly audit   '@types/d3-ease': [ '3.0.2' ],
+28 silly audit   '@types/d3-interpolate': [ '3.0.4' ],
+28 silly audit   '@types/d3-path': [ '3.1.0' ],
+28 silly audit   '@types/d3-scale': [ '4.0.8' ],
+28 silly audit   '@types/d3-shape': [ '3.1.6' ],
+28 silly audit   '@types/d3-time': [ '3.0.3' ],
+28 silly audit   '@types/d3-timer': [ '3.0.2' ],
+28 silly audit   '@types/estree': [ '1.0.8' ],
+28 silly audit   '@types/express': [ '4.17.21' ],
+28 silly audit   '@types/express-serve-static-core': [ '4.19.6' ],
+28 silly audit   '@types/express-session': [ '1.18.0' ],
+28 silly audit   '@types/http-errors': [ '2.0.4' ],
+28 silly audit   '@types/mime': [ '1.3.5' ],
+28 silly audit   '@types/node': [ '20.19.27', '22.19.7' ],
+28 silly audit   '@types/passport': [ '1.0.17' ],
+28 silly audit   '@types/passport-local': [ '1.0.38' ],
+28 silly audit   '@types/passport-strategy': [ '0.2.38' ],
+28 silly audit   '@types/pg': [ '8.11.6' ],
+28 silly audit   '@types/prop-types': [ '15.7.13' ],
+28 silly audit   '@types/qs': [ '6.9.16' ],
+28 silly audit   '@types/range-parser': [ '1.2.7' ],
+28 silly audit   '@types/react': [ '18.3.12' ],
+28 silly audit   '@types/react-dom': [ '18.3.1' ],
+28 silly audit   '@types/send': [ '0.17.4' ],
+28 silly audit   '@types/serve-static': [ '1.15.7' ],
+28 silly audit   '@types/ws': [ '8.5.13' ],
+28 silly audit   '@vitejs/plugin-react': [ '4.7.0' ],
+28 silly audit   accepts: [ '1.3.8' ],
+28 silly audit   'ansi-regex': [ '6.1.0', '5.0.1' ],
+28 silly audit   'ansi-styles': [ '6.2.1', '4.3.0' ],
+28 silly audit   'any-promise': [ '1.3.0' ],
+28 silly audit   anymatch: [ '3.1.3' ],
+28 silly audit   arg: [ '5.0.2' ],
+28 silly audit   'aria-hidden': [ '1.2.4' ],
+28 silly audit   'array-flatten': [ '1.1.1' ],
+28 silly audit   autoprefixer: [ '10.4.20' ],
+28 silly audit   'balanced-match': [ '1.0.2' ],
+28 silly audit   'binary-extensions': [ '2.3.0' ],
+28 silly audit   'body-parser': [ '1.20.3' ],
+28 silly audit   debug: [ '2.6.9', '4.3.7' ],
+28 silly audit   ms: [ '2.0.0', '2.1.3' ],
+28 silly audit   'brace-expansion': [ '2.0.2' ],
+28 silly audit   braces: [ '3.0.3' ],
+28 silly audit   browserslist: [ '4.24.2' ],
+28 silly audit   bufferutil: [ '4.0.8' ],
+28 silly audit   bytes: [ '3.1.2' ],
+28 silly audit   'call-bind': [ '1.0.7' ],
+28 silly audit   'camelcase-css': [ '2.0.1' ],
+28 silly audit   'caniuse-lite': [ '1.0.30001753' ],
+28 silly audit   chokidar: [ '3.6.0' ],
+28 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+28 silly audit   'class-variance-authority': [ '0.7.1' ],
+28 silly audit   clsx: [ '2.1.1' ],
+28 silly audit   cmdk: [ '1.1.1' ],
+28 silly audit   'color-convert': [ '2.0.1' ],
+28 silly audit   'color-name': [ '1.1.4' ],
+28 silly audit   commander: [ '4.1.1' ],
+28 silly audit   'connect-pg-simple': [ '10.0.0' ],
+28 silly audit   'content-disposition': [ '0.5.4' ],
+28 silly audit   'content-type': [ '1.0.5' ],
+28 silly audit   'convert-source-map': [ '2.0.0' ],
+28 silly audit   cookie: [ '0.7.1', '0.7.2' ],
+28 silly audit   'cookie-signature': [ '1.0.6', '1.0.7' ],
+28 silly audit   'cross-spawn': [ '7.0.6' ],
+28 silly audit   cssesc: [ '3.0.0' ],
+28 silly audit   csstype: [ '3.1.3' ],
+28 silly audit   'd3-array': [ '3.2.4' ],
+28 silly audit   'd3-color': [ '3.1.0' ],
+28 silly audit   'd3-ease': [ '3.0.1' ],
+28 silly audit   'd3-format': [ '3.1.0' ],
+28 silly audit   'd3-interpolate': [ '3.0.1' ],
+28 silly audit   'd3-path': [ '3.1.0' ],
+28 silly audit   'd3-scale': [ '4.0.2' ],
+28 silly audit   'd3-shape': [ '3.2.0' ],
+28 silly audit   'd3-time': [ '3.1.0' ],
+28 silly audit   'd3-time-format': [ '4.1.0' ],
+28 silly audit   'd3-timer': [ '3.0.1' ],
+28 silly audit   'date-fns': [ '3.6.0' ],
+28 silly audit   'decimal.js-light': [ '2.5.1' ],
+28 silly audit   'define-data-property': [ '1.1.4' ],
+28 silly audit   depd: [ '2.0.0' ],
+28 silly audit   destroy: [ '1.2.0' ],
+28 silly audit   'detect-libc': [ '2.0.3' ],
+28 silly audit   'detect-node-es': [ '1.1.0' ],
+28 silly audit   didyoumean: [ '1.2.2' ],
+28 silly audit   dlv: [ '1.1.3' ],
+28 silly audit   'dom-helpers': [ '5.2.1' ],
+28 silly audit   'drizzle-kit': [ '0.31.8' ],
+28 silly audit   tsx: [ '4.21.0', '4.20.5' ],
+28 silly audit   esbuild: [ '0.27.2', '0.25.12' ],
+28 silly audit   'drizzle-orm': [ '0.39.3' ],
+28 silly audit   'drizzle-zod': [ '0.7.0' ],
+28 silly audit   eastasianwidth: [ '0.2.0' ],
+28 silly audit   'ee-first': [ '1.1.1' ],
+28 silly audit   'electron-to-chromium': [ '1.5.51' ],
+28 silly audit   'embla-carousel': [ '8.6.0' ],
+28 silly audit   'embla-carousel-react': [ '8.6.0' ],
+28 silly audit   'embla-carousel-reactive-utils': [ '8.6.0' ],
+28 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+28 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+28 silly audit   'enhanced-resolve': [ '5.18.4' ],
+28 silly audit   'es-define-property': [ '1.0.0' ],
+28 silly audit   'es-errors': [ '1.3.0' ],
+28 silly audit   'esbuild-register': [ '3.6.0' ],
+28 silly audit   escalade: [ '3.2.0' ],
+28 silly audit   'escape-html': [ '1.0.3' ],
+28 silly audit   etag: [ '1.8.1' ],
+28 silly audit   eventemitter3: [ '4.0.7' ],
+28 silly audit   express: [ '4.21.2' ],
+28 silly audit   'express-session': [ '1.18.2' ],
+28 silly audit   'fast-equals': [ '5.2.2' ],
+28 silly audit   'fast-glob': [ '3.3.2' ],
+28 silly audit   fastq: [ '1.17.1' ],
+28 silly audit   'fill-range': [ '7.1.1' ],
+28 silly audit   finalhandler: [ '1.3.1' ],
+28 silly audit   'foreground-child': [ '3.3.0' ],
+28 silly audit   forwarded: [ '0.2.0' ],
+28 silly audit   'fraction.js': [ '4.3.7' ],
+28 silly audit   'framer-motion': [ '11.18.2' ],
+28 silly audit   fresh: [ '0.5.2' ],
+28 silly audit   fsevents: [ '2.3.3' ],
+28 silly audit   'function-bind': [ '1.1.2' ],
+28 silly audit   gensync: [ '1.0.0-beta.2' ],
+28 silly audit   'get-intrinsic': [ '1.2.4' ],
+28 silly audit   'get-nonce': [ '1.0.1' ],
+28 silly audit   'get-tsconfig': [ '4.8.1' ],
+28 silly audit   glob: [ '10.5.0' ],
+28 silly audit   gopd: [ '1.0.1' ],
+28 silly audit   'graceful-fs': [ '4.2.11' ],
+28 silly audit   'has-property-descriptors': [ '1.0.2' ],
+28 silly audit   'has-proto': [ '1.0.3' ],
+28 silly audit   'has-symbols': [ '1.0.3' ],
+28 silly audit   hasown: [ '2.0.2' ],
+28 silly audit   'http-errors': [ '2.0.0' ],
+28 silly audit   'iconv-lite': [ '0.4.24' ],
+28 silly audit   inherits: [ '2.0.4' ],
+28 silly audit   'input-otp': [ '1.4.2' ],
+28 silly audit   internmap: [ '2.0.3' ],
+28 silly audit   'ipaddr.js': [ '1.9.1' ],
+28 silly audit   'is-binary-path': [ '2.1.0' ],
+28 silly audit   'is-core-module': [ '2.15.1' ],
+28 silly audit   'is-extglob': [ '2.1.1' ],
+28 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+28 silly audit   'is-glob': [ '4.0.3' ],
+28 silly audit   'is-number': [ '7.0.0' ],
+28 silly audit   isexe: [ '2.0.0' ],
+28 silly audit   jackspeak: [ '3.4.3' ],
+28 silly audit   'js-tokens': [ '4.0.0' ],
+28 silly audit   jsesc: [ '3.0.2' ],
+28 silly audit   json5: [ '2.2.3' ],
+28 silly audit   lightningcss: [ '1.30.2' ],
+28 silly audit   'lightningcss-android-arm64': [ '1.30.2' ],
+28 silly audit   'lightningcss-darwin-arm64': [ '1.30.2' ],
+28 silly audit   'lightningcss-darwin-x64': [ '1.30.2' ],
+28 silly audit   'lightningcss-freebsd-x64': [ '1.30.2' ],
+28 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.30.2' ],
+28 silly audit   'lightningcss-linux-arm64-gnu': [ '1.30.2' ],
+28 silly audit   'lightningcss-linux-arm64-musl': [ '1.30.2' ],
+28 silly audit   'lightningcss-linux-x64-gnu': [ '1.30.2' ],
+28 silly audit   'lightningcss-linux-x64-musl': [ '1.30.2' ],
+28 silly audit   'lightningcss-win32-arm64-msvc': [ '1.30.2' ],
+28 silly audit   'lightningcss-win32-x64-msvc': [ '1.30.2' ],
+28 silly audit   lilconfig: [ '3.1.3' ],
+28 silly audit   'lines-and-columns': [ '1.2.4' ],
+28 silly audit   lodash: [ '4.17.21' ],
+28 silly audit   'lodash.castarray': [ '4.4.0' ],
+28 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+28 silly audit   'lodash.merge': [ '4.6.2' ],
+28 silly audit   'loose-envify': [ '1.4.0' ],
+28 silly audit   'lru-cache': [ '5.1.1', '4.1.5', '10.4.3' ],
+28 silly audit   'lucide-react': [ '0.453.0' ],
+28 silly audit   'magic-string': [ '0.30.21' ],
+28 silly audit   'media-typer': [ '0.3.0' ],
+28 silly audit   memorystore: [ '1.6.7' ],
+28 silly audit   yallist: [ '2.1.2', '3.1.1' ],
+28 silly audit   'merge-descriptors': [ '1.0.3' ],
+28 silly audit   merge2: [ '1.4.1' ],
+28 silly audit   methods: [ '1.1.2' ],
+28 silly audit   micromatch: [ '4.0.8' ],
+28 silly audit   mime: [ '1.6.0' ],
+28 silly audit   'mime-db': [ '1.52.0' ],
+28 silly audit   'mime-types': [ '2.1.35' ],
+28 silly audit   minimatch: [ '9.0.5' ],
+28 silly audit   minipass: [ '7.1.2' ],
+28 silly audit   mitt: [ '3.0.1' ],
+28 silly audit   'modern-screenshot': [ '4.6.0' ],
+28 silly audit   'motion-dom': [ '11.18.1' ],
+28 silly audit   'motion-utils': [ '11.18.1' ],
+28 silly audit   mz: [ '2.7.0' ],
+28 silly audit   nanoid: [ '3.3.11' ],
+28 silly audit   negotiator: [ '0.6.3' ],
+28 silly audit   'next-themes': [ '0.4.6' ],
+28 silly audit   'node-gyp-build': [ '4.8.3' ],
+28 silly audit   'node-releases': [ '2.0.18' ],
+28 silly audit   'normalize-path': [ '3.0.0' ],
+28 silly audit   'normalize-range': [ '0.1.2' ],
+28 silly audit   'object-assign': [ '4.1.1' ],
+28 silly audit   'object-hash': [ '3.0.0' ],
+28 silly audit   'object-inspect': [ '1.13.2' ],
+28 silly audit   obuf: [ '1.1.2' ],
+28 silly audit   'on-finished': [ '2.4.1' ],
+28 silly audit   'on-headers': [ '1.1.0' ],
+28 silly audit   'package-json-from-dist': [ '1.0.1' ],
+28 silly audit   parseurl: [ '1.3.3' ],
+28 silly audit   passport: [ '0.7.0' ],
+28 silly audit   'passport-local': [ '1.0.0' ],
+28 silly audit   'passport-strategy': [ '1.0.0' ],
+28 silly audit   'path-key': [ '3.1.1' ],
+28 silly audit   'path-parse': [ '1.0.7' ],
+28 silly audit   'path-scurry': [ '1.11.1' ],
+28 silly audit   'path-to-regexp': [ '0.1.12' ],
+28 silly audit   pause: [ '0.0.1' ],
+28 silly audit   pg: [ '8.16.3' ],
+28 silly audit   'pg-cloudflare': [ '1.2.7' ],
+28 silly audit   'pg-connection-string': [ '2.9.1' ],
+28 silly audit   'pg-int8': [ '1.0.1' ],
+28 silly audit   'pg-numeric': [ '1.0.2' ],
+28 silly audit   'pg-pool': [ '3.10.1' ],
+28 silly audit   'pg-protocol': [ '1.10.3' ],
+28 silly audit   'pg-types': [ '4.0.2', '2.2.0' ],
+28 silly audit   'postgres-array': [ '2.0.0', '3.0.2' ],
+28 silly audit   'postgres-bytea': [ '1.0.0', '3.0.0' ],
+28 silly audit   'postgres-date': [ '1.0.7', '2.1.0' ],
+28 silly audit   'postgres-interval': [ '1.2.0', '3.0.0' ],
+28 silly audit   pgpass: [ '1.0.5' ],
+28 silly audit   picocolors: [ '1.1.1' ],
+28 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+28 silly audit   pify: [ '2.3.0' ],
+28 silly audit   pirates: [ '4.0.6' ],
+28 silly audit   postcss: [ '8.5.6' ],
+28 silly audit   'postcss-import': [ '15.1.0' ],
+28 silly audit   'postcss-js': [ '4.0.1' ],
+28 silly audit   'postcss-load-config': [ '4.0.2' ],
+28 silly audit   'postcss-nested': [ '6.2.0' ],
+28 silly audit   'postcss-value-parser': [ '4.2.0' ],
+28 silly audit   'postgres-range': [ '1.1.4' ],
+28 silly audit   'prop-types': [ '15.8.1' ],
+28 silly audit   'react-is': [ '16.13.1', '18.3.1' ],
+28 silly audit   'proxy-addr': [ '2.0.7' ],
+28 silly audit   pseudomap: [ '1.0.2' ],
+28 silly audit   qs: [ '6.13.0' ],
+28 silly audit   'queue-microtask': [ '1.2.3' ],
+28 silly audit   'random-bytes': [ '1.0.0' ],
+28 silly audit   'range-parser': [ '1.2.1' ],
+28 silly audit   'raw-body': [ '2.5.2' ],
+28 silly audit   react: [ '18.3.1' ],
+28 silly audit   'react-day-picker': [ '8.10.1' ],
+28 silly audit   'react-dom': [ '18.3.1' ],
+28 silly audit   'react-hook-form': [ '7.55.0' ],
+28 silly audit   'react-icons': [ '5.4.0' ],
+28 silly audit   'react-refresh': [ '0.17.0' ],
+28 silly audit   'react-remove-scroll': [ '2.6.3' ],
+28 silly audit   'react-remove-scroll-bar': [ '2.3.8' ],
+28 silly audit   'react-resizable-panels': [ '2.1.7' ],
+28 silly audit   'react-smooth': [ '4.0.4' ],
+28 silly audit   'react-style-singleton': [ '2.2.3' ],
+28 silly audit   'react-transition-group': [ '4.4.5' ],
+28 silly audit   'read-cache': [ '1.0.0' ],
+28 silly audit   readdirp: [ '3.6.0' ],
+28 silly audit   recharts: [ '2.15.4' ],
+28 silly audit   'recharts-scale': [ '0.4.5' ],
+28 silly audit   'regenerator-runtime': [ '0.14.1' ],
+28 silly audit   regexparam: [ '3.0.0' ],
+28 silly audit   resolve: [ '1.22.8' ],
+28 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+28 silly audit   reusify: [ '1.0.4' ],
+28 silly audit   rollup: [ '4.53.5' ],
+28 silly audit   'run-parallel': [ '1.2.0' ],
+28 silly audit   'safe-buffer': [ '5.2.1' ],
+28 silly audit   'safer-buffer': [ '2.1.2' ],
+28 silly audit   scheduler: [ '0.23.2' ],
+28 silly audit   semver: [ '6.3.1' ],
+28 silly audit   send: [ '0.19.0' ],
+28 silly audit   'serve-static': [ '1.16.2' ],
+28 silly audit   'serverless-http': [ '4.0.0' ],
+28 silly audit   'set-function-length': [ '1.2.2' ],
+28 silly audit   setprototypeof: [ '1.2.0' ],
+28 silly audit   'shebang-command': [ '2.0.0' ],
+28 silly audit   'shebang-regex': [ '3.0.0' ],
+28 silly audit   'side-channel': [ '1.0.6' ],
+28 silly audit   'signal-exit': [ '4.1.0' ],
+28 silly audit   'source-map-js': [ '1.2.1' ],
+28 silly audit   split2: [ '4.2.0' ],
+28 silly audit   statuses: [ '2.0.1' ],
+28 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+28 silly audit   'strip-ansi': [ '6.0.1', '7.1.0' ],
+28 silly audit   sucrase: [ '3.35.0' ],
+28 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+28 silly audit   'tailwind-merge': [ '2.6.0' ],
+28 silly audit   'tailwindcss-animate': [ '1.0.7' ],
+28 silly audit   tapable: [ '2.3.0' ],
+28 silly audit   thenify: [ '3.3.1' ],
+28 silly audit   'thenify-all': [ '1.6.0' ],
+28 silly audit   'tiny-invariant': [ '1.3.3' ],
+28 silly audit   tinyglobby: [ '0.2.15' ],
+28 silly audit   fdir: [ '6.5.0' ],
+28 silly audit   'to-regex-range': [ '5.0.1' ],
+28 silly audit   toidentifier: [ '1.0.1' ],
+28 silly audit   'ts-interface-checker': [ '0.1.13' ],
+28 silly audit   tslib: [ '2.8.1' ],
+28 silly audit   'tw-animate-css': [ '1.2.5' ],
+28 silly audit   'type-is': [ '1.6.18' ],
+28 silly audit   typescript: [ '5.6.3' ],
+28 silly audit   'uid-safe': [ '2.1.5' ],
+28 silly audit   'undici-types': [ '6.21.0' ],
+28 silly audit   unpipe: [ '1.0.0' ],
+28 silly audit   'update-browserslist-db': [ '1.1.1' ],
+28 silly audit   'use-callback-ref': [ '1.3.3' ],
+28 silly audit   'use-sidecar': [ '1.1.3' ],
+28 silly audit   'use-sync-external-store': [ '1.2.2' ],
+28 silly audit   'util-deprecate': [ '1.0.2' ],
+28 silly audit   'utils-merge': [ '1.0.1' ],
+28 silly audit   vary: [ '1.1.2' ],
+28 silly audit   vaul: [ '1.1.2' ],
+28 silly audit   'victory-vendor': [ '36.9.2' ],
+28 silly audit   vite: [ '7.3.0' ],
+28 silly audit   which: [ '2.0.2' ],
+28 silly audit   wouter: [ '3.3.5' ],
+28 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+28 silly audit   ws: [ '8.18.0' ],
+28 silly audit   xtend: [ '4.0.2' ],
+28 silly audit   yaml: [ '2.6.0' ],
+28 silly audit   zod: [ '3.24.2' ],
+28 silly audit   'zod-validation-error': [ '3.4.0' ],
+28 silly audit   '@neondatabase/serverless': [ '1.0.2' ],
+28 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.1.18' ]
+28 silly audit }
+29 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-win32-x64-msvc
+30 silly reify mark deleted [
+30 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-win32-x64-msvc'
+30 silly reify ]
+31 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-win32-arm64-msvc
+32 silly reify mark deleted [
+32 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-win32-arm64-msvc'
+32 silly reify ]
+33 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-x64-musl
+34 silly reify mark deleted [
+34 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-x64-musl'
+34 silly reify ]
+35 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-x64-gnu
+36 silly reify mark deleted [
+36 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-x64-gnu'
+36 silly reify ]
+37 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-arm64-musl
+38 silly reify mark deleted [
+38 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-arm64-musl'
+38 silly reify ]
+39 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-arm64-gnu
+40 silly reify mark deleted [
+40 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-arm64-gnu'
+40 silly reify ]
+41 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-arm-gnueabihf
+42 silly reify mark deleted [
+42 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-linux-arm-gnueabihf'
+42 silly reify ]
+43 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-freebsd-x64
+44 silly reify mark deleted [
+44 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-freebsd-x64'
+44 silly reify ]
+45 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-darwin-x64
+46 silly reify mark deleted [
+46 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-darwin-x64'
+46 silly reify ]
+47 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-android-arm64
+48 silly reify mark deleted [
+48 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/lightningcss-android-arm64'
+48 silly reify ]
+49 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-win32-x64-msvc
+50 silly reify mark deleted [
+50 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-win32-x64-msvc'
+50 silly reify ]
+51 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-win32-arm64-msvc
+52 silly reify mark deleted [
+52 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-win32-arm64-msvc'
+52 silly reify ]
+53 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-x64-musl
+54 silly reify mark deleted [
+54 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-x64-musl'
+54 silly reify ]
+55 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-x64-gnu
+56 silly reify mark deleted [
+56 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-x64-gnu'
+56 silly reify ]
+57 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-arm64-musl
+58 silly reify mark deleted [
+58 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-arm64-musl'
+58 silly reify ]
+59 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-arm64-gnu
+60 silly reify mark deleted [
+60 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-arm64-gnu'
+60 silly reify ]
+61 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf
+62 silly reify mark deleted [
+62 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf'
+62 silly reify ]
+63 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-freebsd-x64
+64 silly reify mark deleted [
+64 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-freebsd-x64'
+64 silly reify ]
+65 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-darwin-x64
+66 silly reify mark deleted [
+66 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-darwin-x64'
+66 silly reify ]
+67 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-android-arm64
+68 silly reify mark deleted [
+68 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@tailwindcss/oxide-android-arm64'
+68 silly reify ]
+69 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-x64-msvc
+70 silly reify mark deleted [
+70 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-x64-msvc'
+70 silly reify ]
+71 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-x64-gnu
+72 silly reify mark deleted [
+72 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-x64-gnu'
+72 silly reify ]
+73 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-ia32-msvc
+74 silly reify mark deleted [
+74 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-ia32-msvc'
+74 silly reify ]
+75 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-arm64-msvc
+76 silly reify mark deleted [
+76 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-win32-arm64-msvc'
+76 silly reify ]
+77 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-openharmony-arm64
+78 silly reify mark deleted [
+78 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-openharmony-arm64'
+78 silly reify ]
+79 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-x64-musl
+80 silly reify mark deleted [
+80 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-x64-musl'
+80 silly reify ]
+81 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-x64-gnu
+82 silly reify mark deleted [
+82 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-x64-gnu'
+82 silly reify ]
+83 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-s390x-gnu
+84 silly reify mark deleted [
+84 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-s390x-gnu'
+84 silly reify ]
+85 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-riscv64-musl
+86 silly reify mark deleted [
+86 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-riscv64-musl'
+86 silly reify ]
+87 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-riscv64-gnu
+88 silly reify mark deleted [
+88 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-riscv64-gnu'
+88 silly reify ]
+89 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-ppc64-gnu
+90 silly reify mark deleted [
+90 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-ppc64-gnu'
+90 silly reify ]
+91 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-loong64-gnu
+92 silly reify mark deleted [
+92 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-loong64-gnu'
+92 silly reify ]
+93 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm64-musl
+94 silly reify mark deleted [
+94 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm64-musl'
+94 silly reify ]
+95 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm64-gnu
+96 silly reify mark deleted [
+96 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm64-gnu'
+96 silly reify ]
+97 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm-musleabihf
+98 silly reify mark deleted [
+98 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm-musleabihf'
+98 silly reify ]
+99 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm-gnueabihf
+100 silly reify mark deleted [
+100 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-linux-arm-gnueabihf'
+100 silly reify ]
+101 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-freebsd-x64
+102 silly reify mark deleted [
+102 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-freebsd-x64'
+102 silly reify ]
+103 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-freebsd-arm64
+104 silly reify mark deleted [
+104 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-freebsd-arm64'
+104 silly reify ]
+105 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-darwin-x64
+106 silly reify mark deleted [
+106 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-darwin-x64'
+106 silly reify ]
+107 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-android-arm64
+108 silly reify mark deleted [
+108 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-android-arm64'
+108 silly reify ]
+109 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-android-arm-eabi
+110 silly reify mark deleted [
+110 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@rollup/rollup-android-arm-eabi'
+110 silly reify ]
+111 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/win32-x64
+112 silly reify mark deleted [
+112 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/win32-x64'
+112 silly reify ]
+113 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/win32-ia32
+114 silly reify mark deleted [
+114 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/win32-ia32'
+114 silly reify ]
+115 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/win32-arm64
+116 silly reify mark deleted [
+116 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/win32-arm64'
+116 silly reify ]
+117 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/sunos-x64
+118 silly reify mark deleted [
+118 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/sunos-x64'
+118 silly reify ]
+119 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/openharmony-arm64
+120 silly reify mark deleted [
+120 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/openharmony-arm64'
+120 silly reify ]
+121 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/openbsd-x64
+122 silly reify mark deleted [
+122 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/openbsd-x64'
+122 silly reify ]
+123 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/openbsd-arm64
+124 silly reify mark deleted [
+124 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/openbsd-arm64'
+124 silly reify ]
+125 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/netbsd-x64
+126 silly reify mark deleted [
+126 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/netbsd-x64'
+126 silly reify ]
+127 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/netbsd-arm64
+128 silly reify mark deleted [
+128 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/netbsd-arm64'
+128 silly reify ]
+129 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-x64
+130 silly reify mark deleted [
+130 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-x64'
+130 silly reify ]
+131 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-s390x
+132 silly reify mark deleted [
+132 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-s390x'
+132 silly reify ]
+133 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-riscv64
+134 silly reify mark deleted [
+134 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-riscv64'
+134 silly reify ]
+135 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-ppc64
+136 silly reify mark deleted [
+136 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-ppc64'
+136 silly reify ]
+137 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-mips64el
+138 silly reify mark deleted [
+138 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-mips64el'
+138 silly reify ]
+139 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-loong64
+140 silly reify mark deleted [
+140 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-loong64'
+140 silly reify ]
+141 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-ia32
+142 silly reify mark deleted [
+142 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-ia32'
+142 silly reify ]
+143 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-arm64
+144 silly reify mark deleted [
+144 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-arm64'
+144 silly reify ]
+145 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-arm
+146 silly reify mark deleted [
+146 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/linux-arm'
+146 silly reify ]
+147 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/freebsd-x64
+148 silly reify mark deleted [
+148 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/freebsd-x64'
+148 silly reify ]
+149 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/freebsd-arm64
+150 silly reify mark deleted [
+150 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/freebsd-arm64'
+150 silly reify ]
+151 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/darwin-x64
+152 silly reify mark deleted [
+152 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/darwin-x64'
+152 silly reify ]
+153 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/android-x64
+154 silly reify mark deleted [
+154 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/android-x64'
+154 silly reify ]
+155 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/android-arm64
+156 silly reify mark deleted [
+156 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/android-arm64'
+156 silly reify ]
+157 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/android-arm
+158 silly reify mark deleted [
+158 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/android-arm'
+158 silly reify ]
+159 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/aix-ppc64
+160 silly reify mark deleted [
+160 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/@esbuild/aix-ppc64'
+160 silly reify ]
+161 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/win32-x64
+162 silly reify mark deleted [
+162 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/win32-x64'
+162 silly reify ]
+163 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/win32-ia32
+164 silly reify mark deleted [
+164 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/win32-ia32'
+164 silly reify ]
+165 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/win32-arm64
+166 silly reify mark deleted [
+166 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/win32-arm64'
+166 silly reify ]
+167 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/sunos-x64
+168 silly reify mark deleted [
+168 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/sunos-x64'
+168 silly reify ]
+169 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/openharmony-arm64
+170 silly reify mark deleted [
+170 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/openharmony-arm64'
+170 silly reify ]
+171 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/openbsd-x64
+172 silly reify mark deleted [
+172 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/openbsd-x64'
+172 silly reify ]
+173 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/openbsd-arm64
+174 silly reify mark deleted [
+174 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/openbsd-arm64'
+174 silly reify ]
+175 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/netbsd-x64
+176 silly reify mark deleted [
+176 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/netbsd-x64'
+176 silly reify ]
+177 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/netbsd-arm64
+178 silly reify mark deleted [
+178 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/netbsd-arm64'
+178 silly reify ]
+179 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-x64
+180 silly reify mark deleted [
+180 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-x64'
+180 silly reify ]
+181 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-s390x
+182 silly reify mark deleted [
+182 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-s390x'
+182 silly reify ]
+183 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-riscv64
+184 silly reify mark deleted [
+184 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-riscv64'
+184 silly reify ]
+185 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-ppc64
+186 silly reify mark deleted [
+186 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-ppc64'
+186 silly reify ]
+187 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-mips64el
+188 silly reify mark deleted [
+188 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-mips64el'
+188 silly reify ]
+189 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-loong64
+190 silly reify mark deleted [
+190 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-loong64'
+190 silly reify ]
+191 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-ia32
+192 silly reify mark deleted [
+192 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-ia32'
+192 silly reify ]
+193 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-arm64
+194 silly reify mark deleted [
+194 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-arm64'
+194 silly reify ]
+195 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-arm
+196 silly reify mark deleted [
+196 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/linux-arm'
+196 silly reify ]
+197 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/freebsd-x64
+198 silly reify mark deleted [
+198 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/freebsd-x64'
+198 silly reify ]
+199 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/freebsd-arm64
+200 silly reify mark deleted [
+200 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/freebsd-arm64'
+200 silly reify ]
+201 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/darwin-x64
+202 silly reify mark deleted [
+202 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/darwin-x64'
+202 silly reify ]
+203 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/android-x64
+204 silly reify mark deleted [
+204 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/android-x64'
+204 silly reify ]
+205 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/android-arm64
+206 silly reify mark deleted [
+206 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/android-arm64'
+206 silly reify ]
+207 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/android-arm
+208 silly reify mark deleted [
+208 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/android-arm'
+208 silly reify ]
+209 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/aix-ppc64
+210 silly reify mark deleted [
+210 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/vite/node_modules/@esbuild/aix-ppc64'
+210 silly reify ]
+211 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/win32-x64
+212 silly reify mark deleted [
+212 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/win32-x64'
+212 silly reify ]
+213 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/win32-ia32
+214 silly reify mark deleted [
+214 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/win32-ia32'
+214 silly reify ]
+215 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/win32-arm64
+216 silly reify mark deleted [
+216 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/win32-arm64'
+216 silly reify ]
+217 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/sunos-x64
+218 silly reify mark deleted [
+218 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/sunos-x64'
+218 silly reify ]
+219 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/openharmony-arm64
+220 silly reify mark deleted [
+220 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/openharmony-arm64'
+220 silly reify ]
+221 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/openbsd-x64
+222 silly reify mark deleted [
+222 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/openbsd-x64'
+222 silly reify ]
+223 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/openbsd-arm64
+224 silly reify mark deleted [
+224 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/openbsd-arm64'
+224 silly reify ]
+225 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/netbsd-x64
+226 silly reify mark deleted [
+226 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/netbsd-x64'
+226 silly reify ]
+227 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/netbsd-arm64
+228 silly reify mark deleted [
+228 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/netbsd-arm64'
+228 silly reify ]
+229 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-x64
+230 silly reify mark deleted [
+230 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-x64'
+230 silly reify ]
+231 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-s390x
+232 silly reify mark deleted [
+232 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-s390x'
+232 silly reify ]
+233 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-riscv64
+234 silly reify mark deleted [
+234 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-riscv64'
+234 silly reify ]
+235 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-ppc64
+236 silly reify mark deleted [
+236 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-ppc64'
+236 silly reify ]
+237 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-mips64el
+238 silly reify mark deleted [
+238 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-mips64el'
+238 silly reify ]
+239 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-loong64
+240 silly reify mark deleted [
+240 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-loong64'
+240 silly reify ]
+241 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-ia32
+242 silly reify mark deleted [
+242 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-ia32'
+242 silly reify ]
+243 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-arm64
+244 silly reify mark deleted [
+244 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-arm64'
+244 silly reify ]
+245 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-arm
+246 silly reify mark deleted [
+246 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/linux-arm'
+246 silly reify ]
+247 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/freebsd-x64
+248 silly reify mark deleted [
+248 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/freebsd-x64'
+248 silly reify ]
+249 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/freebsd-arm64
+250 silly reify mark deleted [
+250 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/freebsd-arm64'
+250 silly reify ]
+251 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/darwin-x64
+252 silly reify mark deleted [
+252 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/darwin-x64'
+252 silly reify ]
+253 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/android-x64
+254 silly reify mark deleted [
+254 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/android-x64'
+254 silly reify ]
+255 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/android-arm64
+256 silly reify mark deleted [
+256 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/android-arm64'
+256 silly reify ]
+257 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/android-arm
+258 silly reify mark deleted [
+258 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/android-arm'
+258 silly reify ]
+259 verbose reify failed optional dependency /Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/aix-ppc64
+260 silly reify mark deleted [
+260 silly reify   '/Users/matthewsmith/Downloads/Demand-Validate-1/node_modules/drizzle-kit/node_modules/@esbuild/aix-ppc64'
+260 silly reify ]
+261 http cache @neondatabase/serverless@https://registry.npmjs.org/@neondatabase/serverless/-/serverless-1.0.2.tgz 0ms (cache hit)
+262 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-22.19.7.tgz 0ms (cache hit)
+263 silly tarball no local data for @neondatabase/serverless@https://registry.npmjs.org/@neondatabase/serverless/-/serverless-1.0.2.tgz. Extracting by manifest.
+264 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-22.19.7.tgz. Extracting by manifest.
+265 http fetch GET 200 https://registry.npmjs.org/@neondatabase/serverless/-/serverless-1.0.2.tgz 131ms (cache miss)
+266 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 238ms
+267 silly audit report {
+267 silly audit report   lodash: [
+267 silly audit report     {
+267 silly audit report       id: 1112455,
+267 silly audit report       url: 'https://github.com/advisories/GHSA-xxjr-mmjv-4gpg',
+267 silly audit report       title: 'Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions',
+267 silly audit report       severity: 'moderate',
+267 silly audit report       vulnerable_versions: '>=4.0.0 <=4.17.22',
+267 silly audit report       cwe: [Array],
+267 silly audit report       cvss: [Object]
+267 silly audit report     }
+267 silly audit report   ],
+267 silly audit report   qs: [
+267 silly audit report     {
+267 silly audit report       id: 1111755,
+267 silly audit report       url: 'https://github.com/advisories/GHSA-6rw7-vpxm-498p',
+267 silly audit report       title: "qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion",
+267 silly audit report       severity: 'high',
+267 silly audit report       vulnerable_versions: '<6.14.1',
+267 silly audit report       cwe: [Array],
+267 silly audit report       cvss: [Object]
+267 silly audit report     }
+267 silly audit report   ]
+267 silly audit report }
+268 silly packumentCache corgi:https://registry.npmjs.org/lodash cache-miss
+269 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+270 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-22.19.7.tgz 239ms (cache miss)
+271 http fetch GET 200 https://registry.npmjs.org/lodash 91ms (cache revalidated)
+272 silly packumentCache corgi:https://registry.npmjs.org/lodash set size:68481 disposed:false
+273 http fetch GET 200 https://registry.npmjs.org/qs 92ms (cache revalidated)
+274 silly packumentCache corgi:https://registry.npmjs.org/qs set size:111251 disposed:false
+275 silly packumentCache corgi:https://registry.npmjs.org/recharts cache-miss
+276 http fetch GET 200 https://registry.npmjs.org/recharts 35ms (cache revalidated)
+277 silly packumentCache corgi:https://registry.npmjs.org/recharts set size:777667 disposed:false
+278 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+279 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+280 http fetch GET 200 https://registry.npmjs.org/body-parser 49ms (cache revalidated)
+281 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:77795 disposed:false
+282 http fetch GET 200 https://registry.npmjs.org/express 52ms (cache revalidated)
+283 silly packumentCache corgi:https://registry.npmjs.org/express set size:337735 disposed:false
+284 silly ADD node_modules/@neondatabase/serverless
+285 silly ADD node_modules/@neondatabase/serverless/node_modules/@types/node
+286 silly ADD
+287 silly ADD
+288 silly ADD
+289 silly ADD
+290 silly ADD
+291 silly ADD
+292 silly ADD
+293 silly ADD
+294 silly ADD
+295 silly ADD
+296 silly ADD
+297 silly ADD
+298 silly ADD
+299 silly ADD
+300 silly ADD
+301 silly ADD
+302 silly ADD
+303 silly ADD
+304 silly ADD
+305 silly ADD
+306 silly ADD
+307 silly ADD
+308 silly ADD
+309 silly ADD
+310 silly ADD
+311 silly ADD
+312 silly ADD
+313 silly ADD
+314 silly ADD
+315 silly ADD
+316 silly ADD
+317 silly ADD
+318 silly ADD
+319 silly ADD
+320 silly ADD
+321 silly ADD
+322 silly ADD
+323 silly ADD
+324 silly ADD
+325 silly ADD
+326 silly ADD
+327 silly ADD
+328 silly ADD
+329 silly ADD
+330 silly ADD
+331 silly ADD
+332 silly ADD
+333 silly ADD
+334 silly ADD
+335 silly ADD
+336 silly ADD
+337 silly ADD
+338 silly ADD
+339 silly ADD
+340 silly ADD
+341 silly ADD
+342 silly ADD
+343 silly ADD
+344 silly ADD
+345 silly ADD
+346 silly ADD
+347 silly ADD
+348 silly ADD
+349 silly ADD
+350 silly ADD
+351 silly ADD
+352 silly ADD
+353 silly ADD
+354 silly ADD
+355 silly ADD
+356 silly ADD
+357 silly ADD
+358 silly ADD
+359 silly ADD
+360 silly ADD
+361 silly ADD
+362 silly ADD
+363 silly ADD
+364 silly ADD
+365 silly ADD
+366 silly ADD
+367 silly ADD
+368 silly ADD
+369 silly ADD
+370 silly ADD
+371 silly ADD
+372 silly ADD
+373 silly ADD
+374 silly ADD
+375 silly ADD
+376 silly ADD
+377 silly ADD
+378 silly ADD
+379 silly ADD
+380 silly ADD
+381 silly ADD
+382 silly ADD
+383 silly ADD
+384 silly ADD
+385 silly ADD
+386 silly ADD
+387 silly ADD
+388 silly ADD
+389 silly ADD
+390 silly ADD
+391 silly ADD
+392 silly ADD
+393 silly ADD
+394 silly ADD
+395 silly ADD
+396 silly ADD
+397 silly ADD
+398 silly ADD
+399 silly ADD
+400 silly ADD
+401 silly ADD
+402 silly ADD
+403 verbose cwd /Users/matthewsmith/Downloads/Demand-Validate-1
+404 verbose os Darwin 25.0.0
+405 verbose node v22.21.1
+406 verbose npm  v10.9.4
+407 verbose exit 0
+408 info ok

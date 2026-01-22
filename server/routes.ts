@@ -66,31 +66,21 @@ export async function registerRoutes(
   });
 
   // Seed data if empty (Slightly safer for serverless)
-  try {
-    const leads = await storage.getLeads();
-    if (leads.length === 0) {
-      console.log("Seeding database with initial leads...");
-      await storage.createLead({
-        name: "Sarah Jenkins",
-        email: "sarah.j@example.com",
-        interestLevel: "full_time",
-        comments: "Looking for a quiet place away from the kids!"
-      });
-      await storage.createLead({
-        name: "Mike Stevens",
-        email: "mike.dev@example.com",
-        interestLevel: "part_time",
-        comments: "Need good wifi for zoom calls."
-      });
-      await storage.createLead({
-        name: "Emma Wood",
-        email: "emma.w@example.com",
-        interestLevel: "day_pass",
-        comments: "Just testing the waters."
-      });
+  if (process.env.NODE_ENV !== "production") {
+    try {
+      const leads = await storage.getLeads();
+      if (leads.length === 0) {
+        console.log("Seeding database with initial leads...");
+        await storage.createLead({
+          name: "Sarah Jenkins",
+          email: "sarah.j@example.com",
+          interestLevel: "full_time",
+          comments: "Looking for a quiet place away from the kids!"
+        });
+      }
+    } catch (err) {
+      console.error("Failed to seed database:", err);
     }
-  } catch (err) {
-    console.error("Failed to seed database:", err);
   }
 
   return httpServer;
