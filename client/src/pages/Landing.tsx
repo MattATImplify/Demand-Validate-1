@@ -40,7 +40,7 @@ export default function Landing() {
               </motion.h1>
               
               <motion.p variants={fadeInUp} className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-                Professional desk space, high-speed fibre, and fresh coffee—right on your doorstep. Join the waitlist to validate demand for a local workspace.
+                Professional desk space, high-speed fibre, and fresh coffee—right on your doorstep. Join the waitlist for a local workspace.
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4">
@@ -155,7 +155,7 @@ export default function Landing() {
         <div className="container mx-auto max-w-7xl px-4 text-center">
           <h3 className="text-2xl font-display font-bold mb-4">Staplehurst Workspace Project</h3>
           <p className="text-gray-400 mb-8 max-w-md mx-auto">
-            If enough people sign up, we'll open a physical space in the village centre.
+            A new professional hub in the heart of Staplehurst.
           </p>
           <div className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} Staplehurst Workspace. All rights reserved.
