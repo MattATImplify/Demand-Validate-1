@@ -4,7 +4,7 @@
   functions = "dist/functions"
 
 [functions]
-  external_node_modules = ["pg-native"]
+  ignored_node_modules = ["pg-native", "canvas"]
 
 [[redirects]]
   from = "/api/*"
