@@ -55,8 +55,18 @@ async function buildAll() {
     define: {
       "process.env.NODE_ENV": '"production"',
     },
+    plugins: [
+      {
+        name: 'ignore-native',
+        setup(build) {
+          build.onResolve({ filter: /^(pg-native|canvas)$/ }, args => {
+            return { path: args.path, external: true }
+          })
+        },
+      },
+    ],
     minify: true,
-    external: [...externals, "pg-native", "canvas"],
+    external: externals,
     logLevel: "info",
   });
 }
