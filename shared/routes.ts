@@ -19,7 +19,7 @@ export const api = {
   leads: {
     create: {
       method: 'POST' as const,
-      path: '/leads',
+      path: '/api/leads',
       input: insertLeadSchema,
       responses: {
         201: z.custom<typeof leads.$inferSelect>(),
@@ -28,14 +28,14 @@ export const api = {
     },
     list: {
       method: 'GET' as const,
-      path: '/leads',
+      path: '/api/leads',
       responses: {
         200: z.array(z.custom<typeof leads.$inferSelect>()),
       },
     },
     getStats: {
       method: 'GET' as const,
-      path: '/leads/stats',
+      path: '/api/leads/stats',
       responses: {
         200: z.object({
           total: z.number(),

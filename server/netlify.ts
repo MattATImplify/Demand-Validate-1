@@ -4,12 +4,11 @@ import { setupApp } from "./index";
 let serverlessHandler: any;
 
 export const handler: any = async (event: any, context: any) => {
-  // Use context.callbackWaitsForEmptyEventLoop = false to prevent hangs
   context.callbackWaitsForEmptyEventLoop = false;
 
   try {
     if (!serverlessHandler) {
-      console.log("Initializing app for the first time...");
+      console.log("Initializing app...");
       const { app } = await setupApp();
       serverlessHandler = serverless(app);
     }
