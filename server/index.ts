@@ -22,6 +22,14 @@ app.use(
 
 app.use(express.urlencoded({ extended: false }));
 
+// Netlify Function Path Fix
+app.use((req, res, next) => {
+  if (req.url.startsWith('/.netlify/functions/api')) {
+    req.url = req.url.replace('/.netlify/functions/api', '/api');
+  }
+  next();
+});
+
 export function log(message: string, source = "express") {
   const formattedTime = new Date().toLocaleTimeString("en-US", {
     hour: "numeric",
